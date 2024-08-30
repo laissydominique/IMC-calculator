@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/calc.css" />
+    <script src="document.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="btn-back">
+          <a href="/index.html"><button>HOME</button> </a>
+        </div>
+
+        <div class="btn-health">
+          <a href="#"><button>NOSSOS NUTRICIONISTAS</button> </a>
+        </div>
+
+        <div class="btn-more">
+          <a href="#"><button>SAIBA MAIS</button> </a>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="calculator">
+        <div class="container-2">
+          <div class="content">
+            <div class="title">
+              <h2>Calcule o seu IMC</h2>
+            </div>
+            <div class="inputs">
+              <form action="#">
+                <div class="weight">
+                  <label for="weight-input">Digite o seu peso em KG</label>
+                  <input class="weight-input" type="number" required />
+                </div>
+                <div class="height">
+                  <label for="height-input">Digite a sua altura em CM</label>
+                  <input class="height-input" type="number" required />
+                </div>
+                <div class="btn-calculate">
+                  <button id="button-calc">Calcular</button>
+                </div>
+              </form>
+            </div>
+            <div class="infos">
+              <div class="info">
+                <div class="title">
+                  <div class="icon-info">
+                    <i
+                      class="fa-solid fa-circle-info"
+                      style="color: #c1c2c2"
+                    ></i>
+                  </div>
+                  <h4 id="after-click" >Como é feito o cálculo IMC?</h4>
+                </div>
+                <div class="subtitle">
+                  <p id="p-valor-imc">
+                    O Índice de Massa Corporal (IMC) é calculado utilizando a
+                    fórmula simples de dividir o peso de uma pessoa em
+                    quilogramas (kg) pela altura ao quadrado em metros (m).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
