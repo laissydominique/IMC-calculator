@@ -24,9 +24,14 @@ header {
 }
 
 .btn-health button,
-.btn-more button,
-.btn-back button {
+.btn-more button{
   color: #ffffff;
+  font-weight: bolder;
+}
+
+.btn-health button:hover,
+.btn-more button:hover{
+  color: #80e3ad;
 }
 
 .btn-health,
@@ -53,7 +58,7 @@ button {
 }
 
 .header-content {
-  padding: 2.5rem;
+  padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,24 +83,37 @@ span {
   color: #1d2d24;
   font-size: 4rem;
   text-shadow: 1px 1px 3px green;
+  animation: backInDown 2s ease-in-out ;
 }
 
 .subtitle {
   background-color: #1d2d24;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   font-size: 1.2rem;
   border-radius: 1rem;
   padding: 2rem;
   width: 600px;
+  cursor: pointer;
 }
+
+.subtitle:hover{
+  background-color: #2f3f36;
+
+}
+
 .subtitle-2 {
-  background-color: #59866d;
+  background-color: #4a785f;
   color: #ffffff;
   border-radius: 1rem;
   margin-top: 2.3rem;
   padding: 1.5rem;
   font-size: 1rem;
   width: 600px;
+  cursor: pointer;
+}
+
+.subtitle-2:hover{
+  background-color: #57826b;
 }
 
 .button-info {
@@ -116,7 +134,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
   width: 15rem;
   height: 3rem;
   font-size: 20px;
@@ -124,4 +142,18 @@ span {
   cursor: pointer;
   border: 3px solid #59866d;
   padding: 1rem;
+}
+.btn-avancar button:hover{
+  background-color: #f37915;
+  animation: shakeX 1s;
+}
+
+
+@keyframes zoom{
+  0% {
+    transform: scale(1); 
+  }
+  100% {
+    transform: scale(1.1);
+  }
 }

@@ -4,6 +4,9 @@
   border: none;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
 }
 
 header {
@@ -20,12 +23,20 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
+  animation: backInLeft 2s;
 }
 
 .btn-health button,
 .btn-more button,
 .btn-back button {
   color: #ffffff;
+  font-weight: bolder;
+}
+
+.btn-health button:hover,
+.btn-more button:hover,
+.btn-back button:hover {
+  color: #59866d;
 }
 
 .btn-health,
@@ -72,10 +83,11 @@ button {
 .title h2 {
   font-size: 2.7rem;
   color: #000000;
+  animation: fadeInUp 2s;
 }
 
 .inputs {
-  margin-top: 5rem;
+  margin-top: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,6 +109,7 @@ button {
   font-weight: bold;
   color: black;
   font-weight: bold;
+  animation: fadeInUp 2s;
 }
 
 .weight-input,
@@ -114,8 +127,15 @@ button {
 .height-input {
   margin-top: 1rem;
 }
+
 .height label {
   margin-top: 3rem;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 #button-calc {
@@ -125,6 +145,11 @@ button {
   background-color: #55aa7700;
   border: 2px solid #59866d;
   font-weight: bolder;
+}
+
+#button-calc:hover {
+  animation: heartBeat 3s;
+  background-color: #f37915;
 }
 
 .infos {
@@ -142,10 +167,15 @@ button {
   cursor: pointer;
 }
 
+.info:hover {
+  background-color: #32493c;
+}
+
 .info h4 {
   color: rgb(130, 213, 112);
   font-size: 1.3rem;
   margin-bottom: 1rem;
+  animation: fadeInUp 2s;
 }
 .info p {
   color: white;
