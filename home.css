@@ -21,6 +21,7 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
+  animation: backInLeft 2s;
 }
 
 .btn-health button,
