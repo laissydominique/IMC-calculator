@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     btnCalculate.addEventListener("click", () => {
-      event.preventDefault();
       const weightInput = document.querySelector(".weight-input");
       const heightInput = document.querySelector(".height-input");
 
@@ -65,6 +64,5 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-
   getResult();
 });
