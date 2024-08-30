@@ -75,6 +75,7 @@ button {
   color: #ffffff;
   font-size: 1.4rem;
 }
+
 span {
   color: #59866d;
 }
@@ -99,7 +100,6 @@ span {
 
 .subtitle:hover{
   background-color: #2f3f36;
-
 }
 
 .subtitle-2 {
@@ -125,6 +125,7 @@ span {
   color: #ff6347;
   font-size: 1.7rem;
 }
+
 .btn-avancar {
   display: flex;
   align-items: center;
@@ -144,17 +145,8 @@ span {
   border: 3px solid #59866d;
   padding: 1rem;
 }
+
 .btn-avancar button:hover{
   background-color: #f37915;
   animation: shakeX 1s;
-}
-
-
-@keyframes zoom{
-  0% {
-    transform: scale(1); 
-  }
-  100% {
-    transform: scale(1.1);
-  }
 }
